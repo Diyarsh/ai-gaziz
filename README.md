@@ -1,33 +1,63 @@
-# QazaqGaz Login Page
+# Gaziz - AI Assistant для QazaqGaz
 
-A clean, minimalist login page inspired by QazaqGaz website design.
+Веб-приложение с системой входа и AI-ассистентом для экосистемы QazaqGaz.
 
-## Features
+## Особенности
 
-- Clean, modern design matching QazaqGaz branding
-- Responsive layout
-- Blue/teal color palette from qazaqgaz.kz
-- Simple login form with username and password fields
+- Чистый, современный дизайн в стиле QazaqGaz
+- Адаптивная верстка
+- Система входа (admin/admin)
+- AI-ассистент с голосовым вводом
+- Цветовая палитра из qazaqgaz.kz
 
-## Usage
+## Структура проекта
 
-1. Open `index.html` in a web browser
-2. Replace the SVG logo in `index.html` with your actual logo file
-3. Update the login form submission logic in `script.js` to connect to your backend
+- `index.html` - Страница входа
+- `assistant.html` - Интерфейс AI-ассистента
+- `styles.css` - Стили для страницы входа
+- `assistant.css` - Стили для ассистента
+- `script.js` - Логика входа
+- `assistant.js` - Логика чата и голосового ввода
 
-## Logo Replacement
+## Использование
 
-To replace the logo:
-1. Add your logo file (PNG, SVG, or JPG) to the project directory
-2. Update the logo section in `index.html`:
-   - Replace the `<svg>` element with an `<img>` tag pointing to your logo file
-   - Or update the SVG code with your logo's SVG markup
+1. Откройте `index.html` в браузере
+2. Войдите с учетными данными: `admin` / `admin`
+3. Используйте AI-ассистента для получения информации о компании
 
-## Color Palette
+## Деплой на GitHub и Vercel
 
-The design uses colors inspired by QazaqGaz:
-- Primary Blue: #00A8CC
-- Dark Blue: #0077B6
-- Light Blue: #00D4FF
-- Background: #f5f7fa to #e8ecf0 gradient
+### Шаг 1: Создание репозитория на GitHub
+
+1. Перейдите на [GitHub](https://github.com) и создайте новый репозиторий
+2. Назовите его, например, `ai-gaziz` или `qazaqgaz-ai-assistant`
+3. **НЕ** добавляйте README, .gitignore или лицензию (они уже есть)
+
+### Шаг 2: Подключение к GitHub
+
+Выполните следующие команды (замените `YOUR_USERNAME` и `REPO_NAME` на ваши данные):
+
+```bash
+cd /Users/xxx/ai-gaziz
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+git push -u origin main
+```
+
+### Шаг 3: Деплой на Vercel
+
+1. Перейдите на [Vercel](https://vercel.com)
+2. Войдите через GitHub
+3. Нажмите "Add New Project"
+4. Импортируйте ваш репозиторий
+5. Vercel автоматически определит настройки
+6. Нажмите "Deploy"
+
+Vercel автоматически задеплоит ваш проект и предоставит URL!
+
+## Цветовая палитра
+
+- Основной синий: #00A8CC
+- Темно-синий: #0077B6
+- Светло-синий: #00D4FF
+- Фон: градиент от #f5f7fa до #e8ecf0
 
