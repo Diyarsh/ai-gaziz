@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaziz - ваш AI-ассистент в экосистеме QazaqGaz</title>
+    <link rel="stylesheet" href="assistant.css">
+</head>
+<body>
+    <div class="assistant-container">
+        <div class="header">
+            <h1 class="header-title">Gaziz - ваш AI-ассистент в экосистеме QazaqGaz</h1>
+        </div>
+        
+        <div class="main-content">
+            <div class="avatar-section">
+                <div class="avatar-container">
+                    <img src="avatar.png" alt="AI Assistant Avatar" class="avatar-image" id="avatarImage">
+                    <div class="avatar-overlay"></div>
+                </div>
+            </div>
+            
+            <div class="chat-section">
+                <div class="chat-container" id="chatContainer">
+                    <!-- Chat messages will be added here dynamically -->
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="userInput" 
+                            class="chat-input" 
+                            placeholder="Задайте вопрос..."
+                            autocomplete="off"
+                        />
+                        <div id="soundWaveIcon" class="sound-wave-icon" style="display: none;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="8" width="3" height="8" rx="1.5" fill="currentColor"/>
+                                <rect x="7" y="4" width="3" height="16" rx="1.5" fill="currentColor"/>
+                                <rect x="12" y="6" width="3" height="12" rx="1.5" fill="currentColor"/>
+                                <rect x="17" y="2" width="3" height="20" rx="1.5" fill="currentColor"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <button id="micButton" class="action-button mic-button" title="Голосовой ввод">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 1C10.34 1 9 2.34 9 4V12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12V4C15 2.34 13.66 1 12 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M19 10V12C19 15.87 15.87 19 12 19C8.13 19 5 15.87 5 12V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M12 19V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M8 23H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </button>
+                    <button id="sendButton" class="action-button send-button" title="Отправить" style="display: none;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 21L23 12L2 3V10L17 12L2 14V21Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assistant.js"></script>
+</body>
+</html>
+
