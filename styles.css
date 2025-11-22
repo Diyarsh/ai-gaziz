@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .logo-container {
@@ -34,7 +34,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     gap: 15px;
 }
 
