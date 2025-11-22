@@ -1,4 +1,4 @@
-# Gaziz - AI Assistant для QazaqGaz
+# Aqyl - AI Assistant для QazaqGaz
 
 Веб-приложение с системой входа и AI-ассистентом для экосистемы QazaqGaz.
 
