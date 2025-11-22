@@ -30,10 +30,12 @@ body {
 .logo-container {
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
+    gap: 15px;
 }
 
 .logo-image {
@@ -41,6 +43,14 @@ body {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.aqyl-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: 2px;
+    margin: 0;
 }
 
 .logo-fallback {
